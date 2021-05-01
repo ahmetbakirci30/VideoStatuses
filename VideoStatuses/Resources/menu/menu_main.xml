@@ -1,0 +1,47 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <item
+    android:id="@+id/nav_search"
+    android:icon="@drawable/search"
+    android:title="@string/search"
+    app:actionViewClass="androidx.appcompat.widget.SearchView"
+    app:showAsAction="always|collapseActionView" />
+  <item
+    android:id="@+id/nav_like"
+    android:icon="@drawable/like"
+    android:title="@string/liked_videos"
+    app:showAsAction="always"/>
+  <item
+      android:id="@+id/nav_share"
+      android:icon="@drawable/black_share"
+      android:title="@string/share_with_friends"
+      app:showAsAction="never"/>
+  <item
+        android:id="@+id/nav_app_evaluation"
+        android:icon="@drawable/badge"
+        android:title="@string/evaluation"
+        app:showAsAction="never"/>
+  <item
+      android:id="@+id/nav_about_developer"
+      android:icon="@drawable/developer"
+      android:title="@string/about_programmer"
+      app:showAsAction="never"/>
+  <item
+      android:id="@+id/nav_who_are_we"
+      android:icon="@drawable/group"
+      android:title="@string/who_are_we"
+      app:showAsAction="never"/>
+  <item
+       android:id="@+id/nav_apps"
+       android:icon="@drawable/apps"
+       android:title="@string/other_apps"
+       app:showAsAction="never"/>
+  <item
+      android:id="@+id/action_settings"
+      android:icon="@drawable/settings"
+      android:title="@string/action_settings"
+      app:showAsAction="never" />
+</menu>

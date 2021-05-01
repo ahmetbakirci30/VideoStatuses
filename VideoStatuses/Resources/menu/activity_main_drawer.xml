@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+          android:id="@+id/nav_home"
+          android:icon="@drawable/home"
+          android:title="@string/title_home" />
+    <item
+        android:id="@+id/nav_apps"
+        android:icon="@drawable/apps"
+        android:title="@string/other_apps" />
+    <item
+        android:id="@+id/nav_like"
+        android:icon="@drawable/heart"
+        android:title="@string/liked_videos"/>
+  </group>
+
+  <item android:title="@string/about_application">
+    <menu>
+      <item
+           android:id="@+id/nav_share"
+           android:icon="@drawable/black_share"
+           android:title="@string/share_application" />
+      <item
+            android:id="@+id/nav_app_evaluation"
+            android:icon="@drawable/badge"
+            android:title="@string/evaluation_application" />
+      <item
+          android:id="@+id/nav_about_developer"
+          android:icon="@drawable/developer"
+          android:title="@string/application_developer" />
+      <item
+          android:id="@+id/nav_who_are_we"
+          android:icon="@drawable/group"
+          android:title="@string/who_are_we" />
+    </menu>
+  </item>
+
+</menu>

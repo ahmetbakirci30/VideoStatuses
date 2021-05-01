@@ -1,0 +1,19 @@
+<resources>
+  <dimen name="nav_header_vertical_spacing">8dp</dimen>
+  <dimen name="nav_header_height">176dp</dimen>
+  <integer name="anim_duration_medium">450</integer>
+  <dimen name="rotation">180</dimen>
+  <dimen name="text_size">20sp</dimen>
+  <dimen name="padding">16dp</dimen>
+  <dimen name="margin">4dp</dimen>
+  <dimen name="text">15sp</dimen>
+  <dimen name="video_title">17sp</dimen>
+  <dimen name="layout_weight">1</dimen>
+  <dimen name="icon_size">24dp</dimen>
+  <dimen name="app_margin">2dp</dimen>
+  <dimen name="app_icon">100dp</dimen>
+  <dimen name="margin_top">-2dp</dimen>
+  <dimen name="layout_top">-6dp</dimen>
+  <dimen name="layout_bottom">50dp</dimen>
+  <dimen name="video_layout">195dp</dimen>
+</resources>

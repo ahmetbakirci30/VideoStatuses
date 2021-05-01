@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/videoBackgroundColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_height"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/mahwous"
+                    android:contentDescription="@string/mahwous"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_margin="@dimen/padding"
+                android:paddingStart="@dimen/nav_header_vertical_spacing"
+                android:paddingEnd="@dimen/nav_header_vertical_spacing"
+                android:textColor="@color/blackTextColor"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/text_size"
+                android:text="@string/mahwous"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:paddingStart="@dimen/nav_header_vertical_spacing"
+                android:paddingEnd="@dimen/nav_header_vertical_spacing"
+                android:textColor="@color/blackTextColor"
+                android:textStyle="bold"
+                android:textSize="@dimen/text"
+                android:text="@string/we"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_margin="@dimen/margin"
+                android:paddingStart="@dimen/nav_header_vertical_spacing"
+                android:paddingEnd="@dimen/nav_header_vertical_spacing"
+                android:textColor="@color/blackTextColor"
+                android:textStyle="bold"
+                android:textSize="@dimen/text"
+                android:text="@string/about_we"/>
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:background="@drawable/custom_layout"
+                android:layout_margin="@dimen/padding"
+                android:padding="@dimen/nav_header_vertical_spacing">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/nav_header_vertical_spacing"
+                    android:paddingEnd="@dimen/nav_header_vertical_spacing"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textStyle="italic|bold"
+                    android:textSize="@dimen/text"
+                    android:text="@string/follow"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text4"
+                    android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_web_site"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="@dimen/layout_weight"
+                        android:tag="@string/ws">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/browser"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/site"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_youtube"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="@dimen/layout_weight"
+                        android:tag="@string/yt">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/youtube"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/youtube"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_telegram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="@dimen/layout_weight"
+                        android:tag="@string/te">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/telegram"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/telegram"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="@string/fb"
+                        android:layout_weight="@dimen/layout_weight">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/facebook"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/facebook"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="@string/ins"
+                        android:layout_weight="@dimen/layout_weight">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:src="@drawable/instagram"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/instagram"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_whatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="@string/wa"
+                        android:layout_weight="@dimen/layout_weight">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/whatsapp"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/whatsapp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative"
+                android:paddingStart="@dimen/nav_header_vertical_spacing"
+                android:paddingEnd="@dimen/nav_header_vertical_spacing"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:paddingBottom="@dimen/layout_bottom">
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin"
+                    android:paddingEnd="@dimen/margin"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic"
+                    android:textSize="@dimen/text"
+                    android:text="@string/follow1"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_layout"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/nav_header_vertical_spacing"
+                        android:padding="@dimen/nav_header_vertical_spacing"
+                        android:tag="@string/ep"
+                        android:layout_weight="@dimen/layout_weight">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/mail"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/mail"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_layout"
+                        android:tag="@string/gp"
+                        android:layout_margin="@dimen/nav_header_vertical_spacing"
+                        android:padding="@dimen/nav_header_vertical_spacing"
+                        android:orientation="vertical"
+                        android:layout_weight="@dimen/layout_weight">
+
+                        <ImageView
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/google_play"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:text="@string/play"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+</RelativeLayout>
